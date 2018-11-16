@@ -1,0 +1,12 @@
+{
+    "movie": [
+         {
+             "title": "Slender",
+             "synopsis": "Lors d'une soirée entre elles quatre lycéennes tentent d'invoquer le Slender Man. Quelques jours plus tard l'une d'elles disparaît dans la nature. Les trois restantes se lancent à sa recherche et devront se confronter au Slender Man."
+         }, 
+         {
+             "title": "Roger Rabbit",
+             "synopsis": "Roger Rabbit est au 36e dessous. Autrefois sacré star du cinéma d'animation, le lapin blanc est fortement préoccupé pendant les tournages depuis qu'il soupçonne sa femme, la sublime Jessica Rabbit, de le tromper. Le studio qui emploie Roger décide d'engager un privé, Eddie Valliant, pour découvrir ce qui se cache derrière cette histoire bien plus complexe qu'il n'y paraît."
+         }
+    ]
+}
