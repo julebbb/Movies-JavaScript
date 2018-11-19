@@ -23,24 +23,33 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-<div>
-  <div id="card" >
-<div v-for="tit in title ">
-  <p>{{ tit.title }}</p>
-  <p>{{ tit.synopsis }}</p>
-</div>
-    
-    <!-- {{synopsis}} -->
-  </div>
-</div>
+    <main>
+      <div id="card" >
+        <div v-for="tit in title ">
+          <p>{{ tit.title }}</p>
+          <p>{{ tit.synopsis }}</p>
+        </div>
+        
+      </div>
+      <section>
+        <h3>Ajouter un film :</h3>
+        <form action="" onsubmit="return false" id="formulaire">
+          <input type="text" v-model="title" placeholder="Titre">
+          <textarea name="synopsis" id="" v-model="synopsis" cols="30" rows="10"></textarea>
+          <input type="submit" v-on:click="createCard" value="Envoyer">
+        </form>
+      </section>
+    </main>
     
 
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script> -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <!-- For developpement offline -->
+  <script src="js/vue.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
