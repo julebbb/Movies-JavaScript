@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Film</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,12 +23,36 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+    <main>
+      <section id="card" >
+        <h2>Vos films:</h2>
+        <div class="card" v-for=" card in title">
+          <h4>{{ card.title }}</h4>
+          <p> {{ card.synopsis }}</p>
+        </div>
+        
+      </section>
+      <section>
+        <h3>Ajouter un film :</h3>
+        <form action="" onsubmit="return false" id="formulaire">
+          <label for="title">Titre du film :</label>
+          <input type="text" name="title" v-model="title" placeholder="Titre">
+          <label for="synopsis">Synopsis du film :</label>
+          <textarea name="synopsis" id="" v-model="synopsis" cols="30" rows="10"></textarea>
+          <input type="submit" v-on:click="createCard" value="Envoyer">
+        </form>
+      </section>
+    </main>
+    
 
 
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script> -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <!-- For developpement offline -->
+  <script src="js/vue.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

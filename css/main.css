@@ -97,10 +97,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   #card {
+       display: flex;
+       flex-flow: wrap;
+   }
 
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 35%;
+        margin: 23px;
+        border: 1px solid darkgrey;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
 
+    #card h2 {
+        flex: 1 100%;
+        flex-flow: row;
+    }
 
+    .card h4, .card p {
+        padding: 20px;
+    }
 
+    .card h4 {
+        background: #b8e482;
+        width: 100%;
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    label {
+        margin: 15px;
+    }
+
+    input, textarea {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        margin: 10px;
+        border: 1px solid cadetblue;
+        border-radius: 5px;
+    }
+
+    @media (min-width: 1200px) {
+        .card {
+            flex: 0.2 30%;
+        }
+        #card div {
+            justify-content: center
+        }
+    }
 
 
 
