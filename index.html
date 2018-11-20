@@ -35,7 +35,9 @@
       <section>
         <h3>Ajouter un film :</h3>
         <form action="" onsubmit="return false" id="formulaire">
-          <input type="text" v-model="title" placeholder="Titre">
+          <label for="title">Titre du film :</label>
+          <input type="text" name="title" v-model="title" placeholder="Titre">
+          <label for="synopsis">Synopsis du film :</label>
           <textarea name="synopsis" id="" v-model="synopsis" cols="30" rows="10"></textarea>
           <input type="submit" v-on:click="createCard" value="Envoyer">
         </form>
