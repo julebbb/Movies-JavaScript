@@ -4,7 +4,6 @@ xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         //Take json file and make object in a variable
         object = JSON.parse(xhttp.responseText);
-        
         new Vue({
             el: "#card",
             data: {
@@ -23,6 +22,8 @@ xhttp.onreadystatechange = function () {
             methods: {
                 createCard: function() {
                     object.movie.push({'title': this.title, 'synopsis': this.synopsis})
+                    this.title = ""
+                    this.synopsis = ""
                 }
             }
         })

@@ -24,13 +24,14 @@
 
   <!-- Add your site or application content here -->
     <main>
-      <div id="card" >
-        <div v-for="tit in title ">
-          <p>{{ tit.title }}</p>
-          <p>{{ tit.synopsis }}</p>
+      <section id="card" >
+        <h2>Vos films:</h2>
+        <div class="card" v-for=" card in title">
+          <h4>{{ card.title }}</h4>
+          <p> {{ card.synopsis }}</p>
         </div>
         
-      </div>
+      </section>
       <section>
         <h3>Ajouter un film :</h3>
         <form action="" onsubmit="return false" id="formulaire">
